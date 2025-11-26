@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roberto's Burgers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                orange: '#FF5A00', // Laranja Principal
+                black: '#0B0B0B',  // Preto Grafite (Background)
+                card: '#141414',   // Levemente mais claro que o fundo para destacar o card
+                white: '#FFFFFF',  // Texto Principal
+                gray: '#CFCFCF',   // Texto Secundário
+                yellow: '#F2A900', // Amarelo Queimado
+                overlay: '#00000080' // Overlay 50%
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Smooth scrolling for anchor links */
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Hide scrollbar for category nav but keep functionality */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      body {
+        background-color: #0B0B0B;
+        color: #FFFFFF;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-brand-black text-brand-white selection:bg-brand-orange selection:text-white">
+    <div id="root"></div>
+  </body>
+</html>

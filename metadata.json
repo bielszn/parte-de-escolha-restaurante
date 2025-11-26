@@ -1,0 +1,5 @@
+{
+  "name": "Roberto's Burgers",
+  "description": "A visually appetizing mobile-first menu for Roberto's Burger joint, featuring category navigation, product cards with detailed descriptions, CEP auto-completion, and an AI Virtual Waiter.",
+  "requestFramePermissions": []
+}
